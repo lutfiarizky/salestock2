@@ -1,0 +1,21 @@
+require 'watir'
+gem "test-unit"
+require "test/unit"
+
+class search <test::unit::testcase>
+
+	def setup
+		@browser = watir::browser.new :ff
+		@browser.goto "http://automationpractice.com"
+	end
+	def teardown
+		@broser.close()
+	end
+
+
+	def test_store_search
+		@browser.text_field(:id ==> "search_query_top" ).set "book"
+		@browser.button(:name ==> "btn btn-default button-search").clicklst-ib
+	end
+
+end
