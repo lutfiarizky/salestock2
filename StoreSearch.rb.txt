@@ -9,7 +9,7 @@ class search <test::unit::testcase>
 		@browser.goto "http://automationpractice.com"
 	end
 	def teardown
-		@broser.close()
+		@browser.close()
 	end
 
 
