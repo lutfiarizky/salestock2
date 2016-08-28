@@ -1,0 +1,21 @@
+require 'watir'
+gem "test-unit"
+require "test/unit"
+
+class search <test::unit::testcase>
+
+	def setup
+		@browser = watir::browser.new :ff
+		@browser.goto "http://automationpractice.com"
+	end
+	def teardown
+		@browser.close()
+	end
+
+
+	def test_product
+		@browser.link (:http://automationpractice.com/index.php?id_category=3&controller=category"//a[contains (@href, mnui=1 ).set "woman"
+		
+	end
+
+end
